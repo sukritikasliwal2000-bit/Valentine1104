@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine Proposal 💘</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      margin: 0;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 400px;
+    }
+    h1 {
+      color: #ff4d6d;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    .yes {
+      background: #ff4d6d;
+      color: white;
+    }
+    .no {
+      background: #ccc;
+      position: relative;
+    }
+    #message {
+      display: none;
+      font-size: 18px;
+      margin-top: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Abhinesh 💖</h1>
+    <p>Will you be my Valentine? 🌹</p>
+
+    <button class="yes" onclick="sayYes()">YES 😍</button>
+    <button class="no" onmouseover="moveNo()">NO 😒</button>
+
+    <div id="message">
+      <p>YAYYYYY!!! 🎉💃</p>
+      <p>
+        Congratulations 🎊<br>
+        You have officially signed up for  
+        <b>unlimited love, random kisses, food stealing  
+        and lifetime drama 😌❤️</b><br><br>
+        Happy Valentine’s Day, my favorite human 😘
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function sayYes() {
+      document.getElementById("message").style.display = "block";
+    }
+
+    function moveNo() {
+      const btn = document.querySelector(".no");
+      btn.style.left = Math.random() * 200 - 100 + "px";
+      btn.style.top = Math.random() * 200 - 100 + "px";
+    }
+  </script>
+
+</body>
+</html>
